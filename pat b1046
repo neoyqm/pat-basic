@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	int a,pa,b,pb;
+	int ca=0,cb=0;
+	cin>>n;
+
+	for(int i=0;i<n;++i)
+	{
+		cin>>a>>pa>>b>>pb;
+		if(pa==a+b)
+		{
+		bool wina=true;
+		cb++;
+		}
+		if(pb==a+b)
+		{
+		bool winb=true;
+		ca++;
+		}
+		if(pa==a+b&&pb==a+b)
+		{
+		ca--;
+		cb--;
+		} 
+	}
+	
+	
+	cout<<ca<<" "<<cb;
+}
