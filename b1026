@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int C1,C2;
+	cin>>C1>>C2;
+	int hour,min,sed;
+	int t;
+	int ans;
+	if((C2-C1)%100>=50)
+	{
+		t=(C2-C1)/100+1 ;
+	} 
+	else{
+		t=(C2-C1)/100;
+	} 
+printf("%02d:%02d:%02d",t/3600,t%3600/60,t%60);
+	
+	return 0; 
+	
+	
+	}           
